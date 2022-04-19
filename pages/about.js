@@ -4,23 +4,19 @@ import Link from 'next/link'
 import { Navbar } from '../components/Navbar'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function About() {
   return (
     <div className={styles.container}>
       <Head>
         <title>Publibolsos</title>
-        <meta name="description" content="Mochilas y bolsos a medida por cantidades" />
+        <meta name="description" content="Quienes somos, a qué nos dedicamos y qué ofrecemos" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Navbar />
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Go to <Link href="/about">About</Link>
-        </h1>
-        <h1 className={styles.title}>
-          Go to <Link href="/contact">Contact</Link>
+          Go to <Link href="/">Home</Link>
         </h1>
 
         <p className={styles.description}>
