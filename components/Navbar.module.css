@@ -1,3 +1,11 @@
+.nav-menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    /* background: #fff; */
+    /* border-bottom: 1px solid #e5e5e5; */
+}
 
 .nav-menu a {
     color: #fff;

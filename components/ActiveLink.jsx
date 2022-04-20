@@ -2,16 +2,15 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const style = {
-    color: "#5454D4",
-    textDecoration: "underline",
-}
+  color: "#5454D4",
+  textDecoration: "none",
+};
 
 export const ActiveLink = ({ text, href }) => {
-
-  const { pathname } = useRouter()
+  const { pathname } = useRouter();
   return (
     <Link href={href}>
-      <a style={ pathname === href ? style : null }>{text}</a>
+      <a style={pathname === href ? style : null}>{text}</a>
     </Link>
   );
 };
