@@ -52,7 +52,7 @@ a {
 
 .title,
 .description {
-  text-align: center;
+  text-align: left;
 }
 
 .description {
@@ -112,6 +112,46 @@ a {
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.main-button {
+  padding: 0.85rem 1.75rem;
+  min-width: 200px;
+  max-width: 200px;
+  border-radius: 5px;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: -0.66px;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transform: perspective(1px) translateZ(0px);
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  color: rgb(255, 255, 255);
+  background-color: rgb(240, 64, 55);
+  border: 1px solid rgb(240, 64, 55);
+  outline: none !important;
+}
+
+.main-button::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0px;
+  background: rgba(255, 255, 255, 0.1);
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.main-button:hover{
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
