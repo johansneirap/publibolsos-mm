@@ -3,19 +3,19 @@ import styles from "./Navbar.module.css";
 
 const menuItems = [
   {
-    text: "Home",
+    text: "Inicio",
     href: "/",
   },
   {
-    text: "About",
+    text: "Quienes Somos",
     href: "/about",
   },
   {
-    text: "Contact",
+    text: "Contacto",
     href: "/contact",
   },
   {
-    text: "Products",
+    text: "Productos",
     href: "/products",
   },
 ];

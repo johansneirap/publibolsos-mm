@@ -154,6 +154,32 @@ a {
   cursor: pointer;
 }
 
+.info-card .legend {
+  margin-bottom: 0px;
+  font-size: 21px;
+  font-weight: 300;
+  letter-spacing: -0.66px;
+  line-height: 38px;
+  color: #C5C5C6;
+}
+
+.index-aside {
+  display: flex;
+  flex-direction: column;
+  width:60%;
+  height: 100%;
+  gap: 3rem;
+  margin-top: 10px;
+}
+
+.infocard-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 100px;
+  padding: 50px 0px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
