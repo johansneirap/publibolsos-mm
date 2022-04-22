@@ -2,7 +2,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 0.5rem 1rem;
+    padding: 2rem 0.5rem;
     /* background: #fff; */
     /* border-bottom: 1px solid #e5e5e5; */
 }
@@ -10,6 +10,6 @@
 .nav-menu a {
     color: #fff;
     text-decoration: none;
-    margin-right: 15px;
+    margin-right: 2rem;
     font-size: 1.5rem;
 }
