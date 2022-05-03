@@ -8,15 +8,15 @@ const menuItems = [
   },
   {
     text: "Quienes Somos",
-    href: "/about",
+    href: "/acerca",
   },
   {
     text: "Contacto",
-    href: "/contact",
+    href: "/contacto",
   },
   {
     text: "Productos",
-    href: "/products",
+    href: "/productos",
   },
 ];
 

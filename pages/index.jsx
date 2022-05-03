@@ -10,7 +10,9 @@ export default function Home() {
         <h1 className="title">
             Confecciones de bolsos y mochilas a medida <Link href="/about">About</Link>
           </h1>
-        <button className='main-button'>Conversemos</button>
+          <Link href="/contacto">
+          <button className='main-button'>Conversemos</button>
+          </Link>
       </aside>
       <section className='infocard-container'>
         <InfoCard 

@@ -11,7 +11,9 @@
   "dependencies": {
     "next": "12.1.5",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-easy-swipe": "^0.0.22",
+    "react-photo-album": "^1.13.1"
   },
   "devDependencies": {
     "eslint": "8.13.0",
