@@ -29,8 +29,8 @@ export const Navbar = () => {
       <div className="menu">
         <ul className={ styles.list }>
           {menuItems.map(({ text, href }) => (
-            <li>
-              <ActiveLink key={text} href={href} text={text} />
+            <li key={text}>
+              <ActiveLink href={href} text={text} />
             </li>
           ))}
         </ul>
