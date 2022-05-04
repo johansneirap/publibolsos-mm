@@ -54,10 +54,7 @@ export default function Products() {
   }
   return (
     <MainLayout>
-        <div style={{ 
-          textAlign: "center",
-          alignSelf: "center",
-        }}>
+        <div className='productos-container'>
         <h2 className='title'>Productos Publimochilas</h2>
         <span className='legend'>Easy to use, responsive and customizable carousel component for React Projects.</span>
         <div style={{
