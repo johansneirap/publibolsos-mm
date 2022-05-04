@@ -58,7 +58,8 @@ export default function Products() {
         <h2 className='title'>Productos Publimochilas</h2>
         <span className='legend'>Easy to use, responsive and customizable carousel component for React Projects.</span>
         <div style={{
-          padding: "0"
+          padding: "0",
+          maxWidth:"100vw",
         }}>
           <Carousel
             data={data}
