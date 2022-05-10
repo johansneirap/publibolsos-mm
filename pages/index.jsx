@@ -8,10 +8,12 @@ export default function Home() {
       <aside className='index-aside'>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elite</p>
         <h1 className="title">
-            Confecciones de bolsos y mochilas a medida <Link href="/about">About</Link>
+            Confecciones de bolsos y mochilas a medida 
+            {/* <Link href="/about">About</Link> */}
           </h1>
+          <br />
           <Link href="/contacto">
-          <button className='main-button'>Conversemos</button>
+            <button className='main-button'>Conversemos</button>
           </Link>
       </aside>
       <section className='infocard-container'>

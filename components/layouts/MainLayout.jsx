@@ -6,7 +6,7 @@ export const MainLayout = ({ children }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Publibolsos</title>
+        <title>Publimochilas</title>
         <meta
           name="description"
           content="Mochilas y bolsos a medida por cantidades"
