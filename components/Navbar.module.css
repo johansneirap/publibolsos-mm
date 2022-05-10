@@ -3,13 +3,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0 1rem;
     /* background: #fff; */
+    background-color: #F0F0F0;
     /* border-bottom: 1px solid #e5e5e5; */
 }
 
 .navbar a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     /* margin-right: 2rem;
     font-size: 1.5rem; */
@@ -43,6 +44,9 @@
         display: inline-flex;
         align-items: center;
         cursor: pointer;
+    }
+    .navbar {
+        justify-content: flex-end;
     }
     
 }

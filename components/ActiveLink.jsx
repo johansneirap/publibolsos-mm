@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const style = {
-  color: "#5454D4",
+  color: "#1C46A1",
   textDecoration: "none",
 };
 

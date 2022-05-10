@@ -1,7 +1,19 @@
+:root {
+  --primarybg: #FDFDFD;
+  --secondarybg: #F0F0F0;
+  --primaryFont: #1E1E1E;
+  --secondaryFont: #7d7d7d;
+  --primaryBlue: #1C46A1;
+  --primaryRed: #EF3211;
+  --primaryGray: #4B4B4B;
+
+}
+
 html,
 body {
-  background-color: #19191b;
-  color: #ffffff;
+  color: #19191b;
+  background-color: var(--secondarybg);
+  /* background-color: #FFFFFF; */
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -34,7 +46,8 @@ a {
 }
 
 .title a {
-  color: #5454d4;
+  /* color: #5454d4; */
+  color: #1C46A1;
   text-decoration: none;
 }
 
@@ -94,8 +107,8 @@ a {
 .card:hover,
 .card:focus,
 .card:active {
-  color: #5454d4;
-  border-color: #5454d4;
+  color: #1C46A1;
+  border-color: #1C46A1;
 }
 
 .card h2 {
@@ -161,7 +174,7 @@ a {
   font-weight: 300;
   letter-spacing: -0.66px;
   line-height: 38px;
-  color: #c5c5c6;
+  color: var(--secondaryFont);
 }
 
 .index-aside {
@@ -190,19 +203,24 @@ a {
   /* height: 100%; */
   gap: 3rem;
   margin-top: 50px;
-  padding: 3rem 10rem;
+  padding: 3rem 5rem;
 }
 
 .form-container {
   margin: 100px 0;
-  background-color: #1e1e20;
+  /* background-color: #1e1e20; */
+  background-color: var(--primarybg);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 5rem;
+  /* grid-column-gap: 5rem; */
   /* gap: 3rem; */
-  padding: 3rem 10rem;
+  padding: 3rem 5rem;
   height: 100%;
   width: 100%;
+}
+
+.form-container form {
+  padding: 2rem;
 }
 
 .input-primary {
@@ -243,12 +261,13 @@ textarea {
   align-items: flex-start;
   justify-content: center;
   text-align: left;
-  padding: 3rem 5rem;
+  /* padding: 3rem 5rem; */
+  padding: 3rem 0 0 10rem;
   gap: 2rem;
 }
 
 .contact-info-container p {
-  color: #c5c5c6;
+  color: var(--secondaryFont);
 }
 .contact-info-container h3 {
   font-weight: 700;
@@ -517,19 +536,20 @@ textarea {
   .infocard-container {
     display: flex;
     flex-direction: column;
-    background-color: #1e1e20;
+    /* background-color: #1e1e20; */
+    background-color: var(--primarybg);
     gap: 50px;
     text-align: center;
   }
   .contact-aside {
     width: 100%;
     text-align: center;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
   }
   .form-container {
     width: 100%;
     text-align: center;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -537,7 +557,7 @@ textarea {
   .contact-info-container {
     width: 100%;
     text-align: center;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -578,4 +598,7 @@ textarea {
   /* #toggler:checked ~ .menu{
     max-height: 100%;
   } */
+  .form-container form {
+    padding: 0;
+  }
 }
