@@ -569,9 +569,17 @@ textarea {
     display: flex;
     flex-direction: column;
     /* background-color: #1e1e20; */
-    background-color: var(--primarybg);
-    gap: 50px;
+    background-color: var(--secondarybg);
+    gap: 3rem;
+    padding: 3rem;
     text-align: center;
+  }
+  .info-card {
+    background-color: var(--primarybg);
+    border: 1px solid var(--primarybg);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.2);
   }
   .contact-aside {
     width: 100%;
