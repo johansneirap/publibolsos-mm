@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MainLayout } from "../components/layouts/MainLayout";
+import circleBg from '../public/asstes/circle-bg.svg';
 
 export default function Contact() {
   return (
@@ -35,6 +36,15 @@ export default function Contact() {
               <p>Ciudad, Estado</p>
             </div>
           </aside>
+          <div style={{
+            position: 'absolute',
+            bottom: 0,
+            right: 0,
+            transform: 'translate(50%, 50%)',
+            zIndex: 1
+          }}>
+            <img src={ circleBg.src } alt="circle background" style={{ maxWidth: '100%', maxHeight: '960px', transform: 'rotate(90deg)'}}/>
+          </div>
         </section>
     </MainLayout>
   );

@@ -9,6 +9,7 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.6);
     /* background-color: #F0F0F0; */
     /* border-bottom: 1px solid #e5e5e5; */
 }
@@ -53,7 +54,7 @@
     .navbar {
         /* justify-content: flex-end; */
         padding: 0 20px;
-        background-color: #F0F0F0;
+        /* background-color: #F0F0F0; */
     }
     
 }

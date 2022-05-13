@@ -56,7 +56,7 @@ export default function Products() {
     <MainLayout>
         <div className='productos-container'>
         <h2 className='title'>Productos Publimochilas</h2>
-        <span className='legend'>Easy to use, responsive and customizable carousel component for React Projects.</span>
+        <span className='legend'>Encuentra los mejores productos acorde a tu necesidad, si no existe... lo creamos! 😎</span>
         <div style={{
           padding: "0",
           maxWidth:"100vw",
