@@ -585,7 +585,7 @@ textarea {
     width: 100%;
     text-align: center;
     padding: 1rem 2rem;
-    background-color: var(--primarybg);
+    /* background-color: var(--primarybg); */
   }
   .form-container {
     width: 100%;
