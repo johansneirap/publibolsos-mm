@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Form } from "../components/contact/Form";
 import { MainLayout } from "../components/layouts/MainLayout";
 import circleBg from '../public/asstes/circle-bg.svg';
 
@@ -11,14 +12,7 @@ export default function Contact() {
 
       </aside>
         <section className="form-container">
-          <form action="">
-            <h2 className="form-title">Estamos siempre abiertos a para ti 24/7</h2>
-            <input placeholder="Tu nombre" className="input-primary" type="text" name="name" id="name" />
-            <input placeholder="Email" className="input-primary" type="email" name="email" id="email" />
-            <input placeholder="Asunto" className="input-primary" type="text" name="asunto" id="asunto" />
-            <textarea placeholder="Deja tu mensaje aquí..." className="input-primary" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-            <button type="submit" className="main-button w-100">Enviar Mensaje</button>
-          </form>
+          <Form />
           <aside className="contact-info-container">
             <div>
               <h3>Llámanos</h3>
