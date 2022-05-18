@@ -12,7 +12,7 @@ export default function Home() {
           top: 0,
           right: 0,
           transform: 'translate(-50%, -50%)',
-          zIndex: 1
+          zIndex: 0
         }}>
           <img src={ circleBg.src } alt="circle background" style={{ maxWidth: '100%'}}/>
         </div>
