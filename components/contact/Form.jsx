@@ -1,11 +1,19 @@
 import { useState } from "react"
 import { InputText } from "./InputText";
+import { motion } from 'framer-motion'
 
 const formInitialValues = {
     name: "",
     email: "",
     message: "",
     subject: "",
+}
+
+
+const fadeInBottomToTop = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    transition: { duration: 1.5, ease: "easeInOut", delay: 0.0 }
 }
 
 // const placeholderByField = {
@@ -76,7 +84,9 @@ export const Form = () => {
     }
 
     return (
-        <form action="">
+        <motion.form 
+            action=""
+            { ...fadeInBottomToTop }>
             <h2 className="form-title">Estamos siempre abiertos a para ti 24/7</h2>
             {
                 Object.keys(formInitialValues).map(field => (
@@ -103,6 +113,6 @@ export const Form = () => {
                 onClick={ handleSubmit }>
                     Enviar Mensaje
             </button>
-        </form>
+        </motion.form>
     )
 }

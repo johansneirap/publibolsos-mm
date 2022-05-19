@@ -2,13 +2,25 @@ import Link from "next/link";
 import { Form } from "../components/contact/Form";
 import { MainLayout } from "../components/layouts/MainLayout";
 import circleBg from '../public/asstes/circle-bg.svg';
+import { motion } from "framer-motion";
+
+const fadeInTopToBottom ={
+  initial: { y: -100, opacity: 0 },
+  animate: { y: 0, opacity: 1 },
+  transition: { duration: 1.5, ease: "easeInOut", delay: 0.0 }
+}
+
 
 export default function Contact() {
   return (
     <MainLayout>
       <aside className="contact-aside">
-        <h2 className="title">Conversemos</h2>
-        <span className="legend-text">Cuentanos que buscas o si tienes alguna idea y encantado te daremos lo que mejor se acomode a tu necesidad</span>
+        <motion.h2 
+          className="title"
+          { ...fadeInTopToBottom }>Conversemos</motion.h2>
+        <motion.span 
+          className="legend-text"
+          { ...fadeInTopToBottom }>Cuentanos que buscas o si tienes alguna idea y encantado te daremos lo que mejor se acomode a tu necesidad</motion.span>
 
       </aside>
         <section className="form-container">
