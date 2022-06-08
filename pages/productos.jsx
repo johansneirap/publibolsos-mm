@@ -6,14 +6,13 @@ export default function Products({ images }) {
   const regex2 = /-/g;
   const data = images.map(image => {
     return {
-      image: image.image,
+      image: image.image.replace('upload/', 'upload/w_auto/q_60/'),
       caption: image.title
         .replace('publimochilas/', '')
         .replace(regex, ' ')
         .replace(regex2, ' '),
     }
   })
-  console.log('images', images);
   const oldData = [
     {
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/1200px-GoldenGateBridge-001.jpg",
