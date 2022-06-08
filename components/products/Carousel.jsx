@@ -238,11 +238,14 @@ function Carousel({
         <div
           className="thumbnails"
           id="thumbnail-div"
-          style={{ maxWidth: width }}
+          style={{ maxWidth: width, maxHeight: '80px' }}
         >
           {data.map((item, index) => {
             return (
               <img
+                style={{
+                  objectFit: 'contain',
+                }}
                 width={thumbnailWidth ? thumbnailWidth : "100px"}
                 src={item.image}
                 alt={item.caption}

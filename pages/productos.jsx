@@ -1,11 +1,15 @@
-import Link from 'next/link'
-import PhotoAlbum from "react-photo-album";
 import { MainLayout } from '../components/layouts/MainLayout'
 import Carousel from '../components/products/Carousel';
 
-
-export default function Products() {
-  const data = [
+export default function Products({ images }) {
+  const data = images.map(image => {
+    return {
+      image: image.image,
+      caption: image.title.replace('publimochilas/', '').replaceAll('_', ' '),
+    }
+  })
+  console.log('images', images);
+  const oldData = [
     {
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/1200px-GoldenGateBridge-001.jpg",
       caption: "San Francisco"
@@ -52,6 +56,7 @@ export default function Products() {
     fontSize: '20px',
     fontWeight: 'bold',
   }
+
   return (
     <MainLayout>
         <div className='productos-container'>
@@ -76,18 +81,43 @@ export default function Products() {
             pauseIconColor="white"
             pauseIconSize="40px"
             slideBackgroundColor="darkgrey"
-            slideImageFit="cover"
+            slideImageFit="contain"
             thumbnails={true}
             thumbnailWidth="100px"
             style={{
               textAlign: "center",
               maxWidth: "1200px",
               maxHeight: "500px",
-              margin: "30px auto",
+              margin: "15px auto 80px auto",
             }}
           />
         </div>
       </div>
     </MainLayout>
   )
+}
+export async function getStaticProps() {
+  const results = await fetch(`https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/resources/image?max_results=500`, {
+    headers: {
+      Authorization: `Basic ${Buffer.from(process.env.CLOUDINARY_API_KEY + ':' + process.env.CLOUDINARY_API_SECRET).toString('base64')}`
+    }
+  }).then(r => r.json());
+  console.log({results});
+  const { resources } = results;
+
+  const images = resources.map(resource => {
+    const { width, height } = resource;
+    return {
+      id: resource.asset_id,
+      title: resource.public_id,
+      image: resource.secure_url,
+      width,
+      height
+    }
+  });
+  return {
+    props: {
+      images,
+    }
+  }
 }

@@ -4,7 +4,6 @@ import { MainLayout } from '../components/layouts/MainLayout'
 import circleBg from '../public/asstes/circle-bg.svg'
 import { motion } from "framer-motion";
 
-
 export default function Home() {
   return (
     <MainLayout>
