@@ -2,10 +2,15 @@ import { MainLayout } from '../components/layouts/MainLayout'
 import Carousel from '../components/products/Carousel';
 
 export default function Products({ images }) {
+  const regex = /_/g;
+  const regex2 = /-/g;
   const data = images.map(image => {
     return {
       image: image.image,
-      caption: image.title.replace('publimochilas/', '').replaceAll('_', ' '),
+      caption: image.title
+        .replace('publimochilas/', '')
+        .replace(regex, ' ')
+        .replace(regex2, ' '),
     }
   })
   console.log('images', images);
@@ -102,7 +107,7 @@ export async function getStaticProps() {
       Authorization: `Basic ${Buffer.from(process.env.CLOUDINARY_API_KEY + ':' + process.env.CLOUDINARY_API_SECRET).toString('base64')}`
     }
   }).then(r => r.json());
-  console.log({results});
+
   const { resources } = results;
 
   const images = resources.map(resource => {
