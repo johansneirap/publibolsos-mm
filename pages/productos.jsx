@@ -25,8 +25,8 @@ export default function Products({ images }) {
   return (
     <MainLayout>
         <div className='productos-container'>
-        <h2 className='title'>Productos Publimochilas</h2>
-        <span className='legend'>Encuentra los mejores productos acorde a tu necesidad, si no existe... lo creamos! 😎</span>
+        <h2 className='title'>Productos Mochilas mineras</h2>
+        <span className='legend'>Encuentra los mejores productos acorde a tu necesidad, si no existe... lo creamos!</span>
         <div style={{
           padding: "0",
           maxWidth:"100vw",
