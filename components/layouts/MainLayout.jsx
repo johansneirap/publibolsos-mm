@@ -6,10 +6,10 @@ export const MainLayout = ({ children }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Publimochilas</title>
+        <title>Mochilas mineras</title>
         <meta
           name="description"
-          content="Mochilas y bolsos a medida por cantidades"
+          content="Mochilas y bolsos especializados para mineras."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
