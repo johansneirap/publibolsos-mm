@@ -16,7 +16,9 @@
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-easy-swipe": "^0.0.22",
-    "react-photo-album": "^1.13.1"
+    "react-photo-album": "^1.13.1",
+    "sweetalert2": "^11.6.1",
+    "sweetalert2-react-content": "^5.0.5"
   },
   "devDependencies": {
     "eslint": "8.13.0",
