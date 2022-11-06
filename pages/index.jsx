@@ -11,7 +11,7 @@ export default function Home() {
           position: 'absolute',
           // top: '50%',
           top: 0,
-          right: 0,
+          left: 0,
           transform: 'translate(-50%, -50%)',
           zIndex: 0
         }}>
