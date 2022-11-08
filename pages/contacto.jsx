@@ -26,13 +26,14 @@ export default function Contact() {
         <Form />
         <aside className="contact-info-container">
           <div>
-            <h3>Llámanos</h3>
-            <p>+56 9 891 364 50</p>
+            <h3>Llámanos o Contáctanos por Whatsapp</h3>
+            <p style={{fontSize: '18px'}}>+56 9 891 364 50</p>
             {/* <p>+1-492-4918-395</p> */}
           </div>
           <div>
             <h3>Envíanos un correo</h3>
-            <p>contacto.mochilasmineras@gmail.com</p>
+            <p>mochilasmineras1@gmail.com</p>
+            <p>alexis.ponce@mochilasmineras.cl</p>
             <p>reactionbag@gmail.com</p>
           </div>
           <div>
