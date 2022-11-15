@@ -10,7 +10,7 @@ const menuItems = [
     href: "/",
   },
   {
-    text: "Quienes Somos",
+    text: "Quienes somos",
     href: "/acerca",
   },
   {

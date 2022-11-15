@@ -1,0 +1,39 @@
+.image {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    left: 0;
+}
+
+.image-container {
+    transition: border-color 0.2s linear;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    border-width: 2px;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.image-container:hover {
+    border-color: gainsboro
+}
+
+.overlay-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000c2;
+    color: white;
+}
+
+.caption h4 {
+    text-align: center;
+    margin: 1em 0;
+}
