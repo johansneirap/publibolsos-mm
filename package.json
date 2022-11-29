@@ -11,6 +11,9 @@
     "dependencies": {
         "@cloudinary/react": "^1.4.1",
         "@cloudinary/url-gen": "^1.8.0",
+        "@emotion/react": "^11.10.5",
+        "@emotion/styled": "^11.10.5",
+        "@mui/material": "^5.10.16",
         "color": "^4.2.3",
         "framer-motion": "^6.3.3",
         "next": "12.1.5",

@@ -1,6 +1,7 @@
 .gallery-container {
-    overflow-y: auto;
-    height: 100%;
-    max-height: calc(100% - 4em);
-    padding: 2em;
+  overflow-y: auto;
+  height: 100%;
+  max-height: calc(100% - 4em);
+  margin-top: 5px;
+  /* padding: 2em; */
 }

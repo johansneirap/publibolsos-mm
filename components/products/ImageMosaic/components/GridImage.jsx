@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import styles from './GridImage.module.css'
-
+import styles from "./GridImage.module.css";
+import Image from "next/image";
 
 /**
  * A single image element in a masonry style image grid
@@ -18,7 +18,14 @@ const GridImage = ({ key, index, left, top, photo, onClick }) => {
       style={{ left, top, height, width }}
     >
       <div className={styles["overlay-container"]}>
-        <img className={styles.image} src={src} alt={alt} caption={caption} />
+        <Image
+          loader={() => src}
+          layout="fill"
+          className={styles.image}
+          src={src}
+          alt={alt}
+          caption={caption}
+        />
         <div className={styles.caption}>
           <h4>{caption}</h4>
         </div>
@@ -39,8 +46,8 @@ GridImage.propTypes = {
     caption: PropTypes.string.isRequired,
     height: PropTypes.number.isRequired,
     width: PropTypes.number.isRequired,
-    src: PropTypes.string.isRequired
-  }).isRequired
+    src: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default GridImage;
