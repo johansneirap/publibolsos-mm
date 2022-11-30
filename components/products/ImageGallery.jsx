@@ -46,9 +46,7 @@ const ImageGallery = () => {
       <Box sx={{ borderBottom: 1, borderColor: "divider", marginTop: "30px" }}>
         <Tabs
           variant="fullWidth"
-          //centered
           orientation={isMobile ? "vertical" : "horizontal"}
-          // TabIndicatorProps={{ sx: { display: "none" } }}
           sx={{
             "& .MuiTabs-flexContainer": {
               alignItems: "center",
@@ -59,7 +57,7 @@ const ImageGallery = () => {
           }}
           value={value}
           onChange={handleChange}
-          aria-label="basic tabs example"
+          aria-label="tabs de categorias de productos"
         >
           <Tab label="Item Mochilas Mineras" />
           <Tab label="Item Bolsos" />

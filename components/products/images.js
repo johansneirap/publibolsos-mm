@@ -140,8 +140,8 @@ export const mosaicImages = [
     src: `${BASE_URL}/bolso/jumbo_bomberos.jpg`,
     alt: "Jumbo Bomberos",
     caption: "Jumbo Bomberos",
-    width: 3,
-    height: 4,
+    width: 4,
+    height: 3,
     type: "bolso",
   },
   {
